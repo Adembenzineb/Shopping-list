@@ -7,18 +7,18 @@ function Add() {
 
 
     new_item = document.createElement("div")
-    new_item.classList.Add("item")
+    new_item.classList.add("item")
     new_item.style["backgroundColor"] ="pink"
     div.appendChild(new_item)
 
     button = document.createElement("input")
-    button.classList.Add("remove")
+    button.classList.add("remove")
     button.setAttribute("type","button")
     button.setAttribute("value","-")
     new_item.appendChild(button)
 
     text = document.createElement("p");
-    text.classlist.Add("Shop")
+    text.classlist.add("Shop")
     text.textContent = input;
     new_item.appendChild(text)
 
