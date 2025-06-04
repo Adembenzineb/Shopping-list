@@ -20,8 +20,6 @@ body,.items{
     align-items: center;
     flex-grow: 1;
     gap: 10px;
-    border-radius: 5px;
-    border: 1px solid black;
     
 
 }
@@ -41,11 +39,15 @@ div{
 
 }
 .remove{
-    height: 50px;
-    width: 50px;
-    padding: 2rem;
-    font-size: 4px;
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: #ff4757;
     border-radius: 5rem;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
 }
 .Shop{
     color: blue;
