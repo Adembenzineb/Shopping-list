@@ -14,13 +14,16 @@ body,.items{
     gap: 10px;
     
 }
-#item{
-    width: 400px;
-    height: 30px;
-    padding: 10px;
+#items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    gap: 10px;
     border-radius: 5px;
     border: 1px solid black;
-    font-size: 20px;
+    
+
 }
 div{
     width: 100px;
@@ -32,7 +35,9 @@ div{
     height: 100px;
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 15px;
+    justify-content: space-between;
+    align-content: center;
 
 }
 .remove{

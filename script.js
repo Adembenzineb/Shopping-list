@@ -3,10 +3,16 @@ bt.addEventListener("click", Add);
 
 function Add() {
     const div = document.querySelector("#items");
-    const input = document.getElementById("item").value;
+    const input = document.getElementById("item").value.trim();
 
 
-    new_item = document.createElement("div")
+    if (div === ""){
+        this.showMessage("Please enter the item's name","error")
+        return false
+    }
+
+
+    const new_item = document.createElement("div")
     new_item.classList.add("item")
     new_item.style["backgroundColor"] ="pink"
     div.appendChild(new_item)
@@ -18,19 +24,9 @@ function Add() {
     new_item.appendChild(button)
 
     text = document.createElement("p");
-    text.classlist.add("Shop")
+    text.classList.add("Shop")
     text.textContent = input;
     new_item.appendChild(text)
 
-    
-    
-    
-    
-    
-    
-
-
-
-    
     
 }
