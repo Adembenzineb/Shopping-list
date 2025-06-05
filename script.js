@@ -10,7 +10,7 @@ function Add() {
 
 
     if (input === ""){
-        this.showMessage("Please enter the item's name","error")
+        alert("Please enter the item's name","error")
         return false
     }
 
